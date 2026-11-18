@@ -9,7 +9,12 @@
         "status": "in-progress",
         "completed": false,
         "dueDate": "2026-11-22",
-        "estimate": "2h"
+        "estimate": "2h",
+        "subtasks": [
+            { "title": "Verify 10+ commits in Front-End & Back-End GitHub repos", "done": true },
+            { "title": "Prepare Postman GET, POST, PUT requests", "done": true },
+            { "title": "Practice explaining Challenge tasks live", "done": false }
+        ]
     },
     {
         "_id": "673b20010000000000000002",
@@ -20,8 +25,12 @@
         "priorityLabel": "P1 - Urgent",
         "status": "todo",
         "completed": false,
-        "dueDate": "2026-11-20",
-        "estimate": "45m"
+        "dueDate": "2026-11-17",
+        "estimate": "45m",
+        "subtasks": [
+            { "title": "Whitelist 0.0.0.0/0 in Atlas Network Access", "done": true },
+            { "title": "Export lessons and orders JSON from Compass", "done": false }
+        ]
     },
     {
         "_id": "673b20010000000000000003",
@@ -33,7 +42,8 @@
         "status": "done",
         "completed": true,
         "dueDate": "2026-11-18",
-        "estimate": "1.5h"
+        "estimate": "1.5h",
+        "subtasks": []
     },
     {
         "_id": "673b20010000000000000004",
@@ -45,7 +55,8 @@
         "status": "in-progress",
         "completed": false,
         "dueDate": "2026-11-21",
-        "estimate": "1h"
+        "estimate": "1h",
+        "subtasks": []
     },
     {
         "_id": "673b20010000000000000005",
@@ -57,7 +68,8 @@
         "status": "done",
         "completed": true,
         "dueDate": "2026-11-19",
-        "estimate": "30m"
+        "estimate": "30m",
+        "subtasks": []
     },
     {
         "_id": "673b20010000000000000006",
@@ -69,7 +81,8 @@
         "status": "todo",
         "completed": false,
         "dueDate": "2026-11-25",
-        "estimate": "1h"
+        "estimate": "1h",
+        "subtasks": []
     },
     {
         "_id": "673b20010000000000000007",
@@ -81,6 +94,7 @@
         "status": "done",
         "completed": true,
         "dueDate": "2026-11-19",
-        "estimate": "40m"
+        "estimate": "40m",
+        "subtasks": []
     }
 ]

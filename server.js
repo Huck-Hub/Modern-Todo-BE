@@ -90,7 +90,7 @@ app.post("/tasks", async function(request, response) {
     }
 });
 
-// PUT /tasks/:_id: updates any attribute of a task (e.g. completed boolean, status, priority)
+// PUT /tasks/:_id: updates any attribute of a task (title, priority, dueDate, completed, status, subtasks)
 app.put("/tasks/:_id", async function(request, response) {
     let tempid = request.params._id;
     try {
@@ -113,7 +113,23 @@ app.put("/tasks/:_id", async function(request, response) {
     }
 });
 
-// DELETE /tasks/:_id: deletes a task from MongoDB Atlas (or local fallback)
+// DELETE /tasks/completed: bulk-deletes all completed tasks
+app.delete("/tasks/completed", async function(request, response) {
+    try {
+        if (db) {
+            let collection = await db.collection("tasks");
+            let result = await collection.deleteMany({ completed: true });
+            response.send(result);
+        } else {
+            localTasks = localTasks.filter(function(t) { return !t.completed; });
+            response.send({ acknowledged: true });
+        }
+    } catch (err) {
+        response.status(500).send({ error: "Failed to clear completed tasks" });
+    }
+});
+
+// DELETE /tasks/:_id: deletes a single task from MongoDB Atlas (or local fallback)
 app.delete("/tasks/:_id", async function(request, response) {
     let tempid = request.params._id;
     try {
