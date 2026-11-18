@@ -1,0 +1,86 @@
+[
+    {
+        "_id": "673b20010000000000000001",
+        "id": 201,
+        "title": "Complete CST3144 Full-Stack MEVN Coursework Demo Prep",
+        "category": "University",
+        "priority": 1,
+        "priorityLabel": "P1 - Urgent",
+        "status": "in-progress",
+        "completed": false,
+        "dueDate": "2026-11-22",
+        "estimate": "2h"
+    },
+    {
+        "_id": "673b20010000000000000002",
+        "id": 202,
+        "title": "Configure MongoDB Atlas IP Access List and Export Collections",
+        "category": "Engineering",
+        "priority": 1,
+        "priorityLabel": "P1 - Urgent",
+        "status": "todo",
+        "completed": false,
+        "dueDate": "2026-11-20",
+        "estimate": "45m"
+    },
+    {
+        "_id": "673b20010000000000000003",
+        "id": 203,
+        "title": "Design Linear-inspired dark mode tokens and Kanban board layout",
+        "category": "Design",
+        "priority": 2,
+        "priorityLabel": "P2 - Medium",
+        "status": "done",
+        "completed": true,
+        "dueDate": "2026-11-18",
+        "estimate": "1.5h"
+    },
+    {
+        "_id": "673b20010000000000000004",
+        "id": 204,
+        "title": "Test GET, POST, PUT, and DELETE routes in Postman",
+        "category": "Engineering",
+        "priority": 2,
+        "priorityLabel": "P2 - Medium",
+        "status": "in-progress",
+        "completed": false,
+        "dueDate": "2026-11-21",
+        "estimate": "1h"
+    },
+    {
+        "_id": "673b20010000000000000005",
+        "id": 205,
+        "title": "Push Vue 3 Front-End repository to GitHub Pages",
+        "category": "University",
+        "priority": 1,
+        "priorityLabel": "P1 - Urgent",
+        "status": "done",
+        "completed": true,
+        "dueDate": "2026-11-19",
+        "estimate": "30m"
+    },
+    {
+        "_id": "673b20010000000000000006",
+        "id": 206,
+        "title": "Read Pro Git book Chapters 1 and 2 for version control review",
+        "category": "Personal",
+        "priority": 3,
+        "priorityLabel": "P3 - Low",
+        "status": "todo",
+        "completed": false,
+        "dueDate": "2026-11-25",
+        "estimate": "1h"
+    },
+    {
+        "_id": "673b20010000000000000007",
+        "id": 207,
+        "title": "Refactor Express logger and static file error middleware",
+        "category": "Engineering",
+        "priority": 2,
+        "priorityLabel": "P2 - Medium",
+        "status": "done",
+        "completed": true,
+        "dueDate": "2026-11-19",
+        "estimate": "40m"
+    }
+]
